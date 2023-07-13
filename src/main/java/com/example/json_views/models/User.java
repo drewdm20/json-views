@@ -3,7 +3,7 @@ package com.example.json_views.models;
 
 import javax.persistence.*;
 
-@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+@Inheritance(strategy = InheritanceType.JOINED)
 @Entity
 @Table(name = "users")
 public class User {

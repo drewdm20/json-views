@@ -1,6 +1,5 @@
 package com.example.json_views.service;
 
-import com.example.json_views.dto.FarmerDto;
 import com.example.json_views.models.Farmer;
 import com.example.json_views.models.User;
 import com.example.json_views.repo.FarmerRepository;
@@ -52,7 +51,8 @@ public class UserServiceImpl implements UserService{
         farmerToSave.setPassword(farmer.getPassword());
         farmerToSave.setIdNumber(farmer.getIdNumber());
         farmerToSave.setAddress(farmer.getAddress());
-        farmerToSave.setRole("ROLE_FARMER");
+        farmer.setRole("ROLE_FARMER");
+        farmerToSave.setRole(farmer.getRole());
         farmerRepository.save(farmer);
     }
 

@@ -3,8 +3,10 @@ package com.example.json_views.models;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Inheritance;
+import javax.persistence.PrimaryKeyJoinColumn;
 
 @Entity
+@PrimaryKeyJoinColumn(name = "id")
 public class Farmer extends User {
 
     @Column(name = "id_number", nullable = false)

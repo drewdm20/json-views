@@ -1,11 +1,7 @@
 package com.example.json_views.service;
 
-import com.example.json_views.dto.AdminDto;
-import com.example.json_views.dto.FarmerDto;
 import com.example.json_views.models.Farmer;
 import com.example.json_views.models.User;
-
-import javax.jws.soap.SOAPBinding;
 import java.util.List;
 
 public interface UserService {
